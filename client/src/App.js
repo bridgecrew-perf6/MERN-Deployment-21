@@ -10,14 +10,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route exact path="/pirates">
+            <CrewBoard />
+          </Route>
           <Route exact path="/pirates/:id">
             <Detail />
           </Route>
           <Route exact path="/pirate/new">
             <AddPirate />
-          </Route>
-          <Route exact path="/pirates">
-            <CrewBoard />
           </Route>
         </Switch>
       </BrowserRouter>
