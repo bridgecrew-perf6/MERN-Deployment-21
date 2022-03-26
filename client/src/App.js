@@ -10,6 +10,9 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
+          <Route exact path="/">
+            <CrewBoard />
+          </Route>
           <Route exact path="/pirates">
             <CrewBoard />
           </Route>
